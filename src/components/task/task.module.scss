@@ -1,0 +1,44 @@
+@import './src/style/index.scss';
+
+body {
+  .task {
+    @include task;
+    flex-basis: 40%;
+  }
+
+  .done {
+    @include task;
+    flex-basis: 40%;
+    opacity: 0.5;
+    text-decoration-line: line-through;
+  }
+
+  .text {
+    padding: 2px;
+    font-size: 18px;
+  }
+
+  @include mediumDevice {
+    .task {
+      flex-basis: 30%;
+    }
+    .done {
+      flex-basis: 30%;
+    }
+    .text {
+      font-size: 22px;
+    }
+  }
+
+  @include largeDevice {
+    .task {
+      flex-basis: 20%;
+    }
+    .done {
+      flex-basis: 20%;
+    }
+    .text {
+      font-size: 24px;
+    }
+  }
+}

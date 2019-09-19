@@ -1,0 +1,24 @@
+@mixin task() {
+  min-height: 20vh;
+  margin: 2%;
+  margin-left: 0;
+  text-align: center;
+  color: $light-font-color;
+  background-color: $button-color;
+}
+
+@mixin mediumDevice() {
+  @media (min-width: $medium-device-width) {
+    @content;
+  }
+
+  @media (orientation: portrait) and (min-width: $medium-device-width) {
+    @content;
+  }
+}
+
+@mixin largeDevice() {
+  @media (min-width: $large-device-width) {
+    @content;
+  }
+}

@@ -1,0 +1,13 @@
+@import './style/index.scss';
+
+body {
+  min-height: 100vh;
+  background-image: $gradient-background;
+}
+.app {
+  margin: 0 auto;
+  max-width: 80vw;
+  text-align: left;
+  font-family: $default-font;
+  color: $dark-font-color;
+}

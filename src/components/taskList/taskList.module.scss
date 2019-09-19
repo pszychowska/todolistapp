@@ -1,0 +1,7 @@
+@import './src/style/index.scss';
+
+.taskList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}

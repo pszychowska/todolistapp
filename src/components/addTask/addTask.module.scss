@@ -1,0 +1,40 @@
+@import './src/style/index.scss';
+
+input {
+  margin-right: 15px;
+  border: 1px solid $dark-font-color;
+  font-size: 18px;
+  text-indent: 2px;
+  line-height: 1.5;
+}
+
+button {
+  margin: 15px;
+  margin-left: 0;
+  font-size: 18px;
+  text-transform: uppercase;
+  line-height: 1.5;
+  background-color: transparent;
+  color: $dark-font-color;
+  border: 1px solid $dark-font-color;
+  transition: 0.2s;
+
+  &:hover {
+    background-color: $button-color;
+    color: $light-font-color;
+  }
+}
+
+@include mediumDevice {
+  input,
+  button {
+    font-size: 20px;
+  }
+}
+
+@include largeDevice {
+  input,
+  button {
+    font-size: 22px;
+  }
+}
